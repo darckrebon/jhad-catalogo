@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image:linear-gradient(75deg, rgb(119, 0, 255), purple);
+    background-attachment: fixed;
+}
+main{
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    margin-top: 5rem;
+    color: antiquewhite;
+}
+nav{
+    display: flex;
+    margin-top: 8%;
+
+}
+nav button{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    padding: 40px;
+
+    border-radius: 24%;
+}
+#btnverdoces{
+    background-image: url(back-graud-buttom/doces.jpg);
+    background-size: cover;
+    color: black;
+}
+#btnverbaloes{
+    background-image: url(back-graud-buttom/baloes.jpg);
+    background-size: cover;
+    color: black;
+}
+#btnverenfeites{
+    background-image: url(back-graud-buttom/enfeites.jpg);
+    background-size: cover;
+}
+#btnverchocolate{
+    background-image: url(back-graud-buttom/chocolate.jpg);
+    background-size: cover;
+}
+#btnverferramentas{
+    background-image: url(back-graud-buttom/ferramentas.jpg);
+    background-size: cover;
+    color: black;
+}
+#btnveritens{
+    background-image: url(back-graud-buttom/copos-tacas.jpeg);
+    background-size: cover;
+    color: black;
+}
+div h2{
+    margin: 10px;
+    font-size: 2.3rem;
+}
+figure{
+    display: inline;
+}
+img{
+    margin: 7px;
+    height: 40vh;
+    width: 30vh;
+}
+.catalogo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 20px;
+    list-style: none;
+}
+.bnt{
+    display: none;
+}
+
+@media (max-width:580px){
+
+    .catalogo{
+        justify-content: center;
+    }
+
+}

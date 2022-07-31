@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jhad/catalogo</title>
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function chocolate(){
+            var pontos=document.getElementById("pontos");
+            var maisTexto=document.getElementById("mais");
+            var btnLeiaMais=document.getElementById("btnverchocolate");
+
+            if(pontos.style.display === "none"){
+                pontos.style.display ="inline";
+                maisTexto.style.display = "none";
+                btnLeiaMais.innerHTML = "Chocolate";
+
+            }else{
+                pontos.style.display ="none";
+                maisTexto.style.display = "inline";
+                btnLeiaMais.innerHTML = "Ver Menus";
+            }
+        }
+
+        function doces(){
+            var pontos=document.getElementById("pontos2");
+            var maisTexto=document.getElementById("mais2");
+            var btnLeiaMais=document.getElementById("btnverdoces");
+
+            if(pontos.style.display === "none"){
+                pontos.style.display ="inline";
+                maisTexto.style.display = "none";
+                btnLeiaMais.innerHTML = "Doces";
+
+            }else{
+                pontos.style.display ="none";
+                maisTexto.style.display = "inline";
+                btnLeiaMais.innerHTML = "Ver Menus";
+            }
+        }
+        
+        function enfeites(){
+            var pontos=document.getElementById("pontos3");
+            var maisTexto=document.getElementById("mais3");
+            var btnLeiaMais=document.getElementById("btnverenfeites");
+
+            if(pontos.style.display === "none"){
+                pontos.style.display ="inline";
+                maisTexto.style.display = "none";
+                btnLeiaMais.innerHTML = "Enfeites";
+
+            }else{
+                pontos.style.display ="none";
+                maisTexto.style.display = "inline";
+                btnLeiaMais.innerHTML = "Ver Menus";
+            }
+        }
+
+        function ferramentas(){
+            var pontos=document.getElementById("pontos4");
+            var maisTexto=document.getElementById("mais4");
+            var btnLeiaMais=document.getElementById("btnverferramentas");
+
+            if(pontos.style.display === "none"){
+                pontos.style.display ="inline";
+                maisTexto.style.display = "none";
+                btnLeiaMais.innerHTML = "Ferramentas";
+
+            }else{
+                pontos.style.display ="none";
+                maisTexto.style.display = "inline";
+                btnLeiaMais.innerHTML = "Ver Menus";
+            }
+        }
+
+        function itens(){
+            var pontos=document.getElementById("pontos5");
+            var maisTexto=document.getElementById("mais5");
+            var btnLeiaMais=document.getElementById("btnveritens");
+
+            if(pontos.style.display === "none"){
+                pontos.style.display ="inline";
+                maisTexto.style.display = "none";
+                btnLeiaMais.innerHTML = "Copos/Taças";
+
+            }else{
+                pontos.style.display ="none";
+                maisTexto.style.display = "inline";
+                btnLeiaMais.innerHTML = "Ver Menus";
+            }
+        }
+
+        function baloes(){
+            var pontos=document.getElementById("pontos6");
+            var maisTexto=document.getElementById("mais6");
+            var btnLeiaMais=document.getElementById("btnverbaloes");
+
+            if(pontos.style.display === "none"){
+                pontos.style.display ="inline";
+                maisTexto.style.display = "none";
+                btnLeiaMais.innerHTML = "Balões";
+
+            }else{
+                pontos.style.display ="none";
+                maisTexto.style.display = "inline";
+                btnLeiaMais.innerHTML = "Ver Menus";
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+        
+    <main> 
+
+        <h1>SoS <br> Embalagens</h1>
+
+        <nav class="catalogo nav">
+            <button onclick="doces()" id="btnverdoces"> Doces</button>
+            
+            <button onclick="baloes()" id="btnverbaloes"> Balões</button>
+            
+            <button onclick="enfeites()" id="btnverenfeites"> Enfeites</button>
+            
+            <button onclick="chocolate()" id="btnverchocolate"> Chocolate</button>
+
+            <button onclick="ferramentas()" id="btnverferramentas"> Ferramentas</button>
+                        
+            <button onclick="itens()" id="btnveritens"> Copos/Taças</button>
+        </nav>
+
+
+        <section class="catalogo">
+           
+            <!--CHOCOLATES-->
+            <span id="pontos"> </span>
+
+            <span id="mais" class="bnt">
+                <article class="chocolate">
+                    
+                    <div>
+                        <h2>Chocoaltes</h2>
+                        <figure>
+                            <img src="chocolate/choco1.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="chocolate/choco2.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="chocolate/choco4.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="chocolate/choco5.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="chocolate/choco6.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="chocolate/choco7.jpeg" alt="">
+                        </figure>
+                    </div>
+                </article>
+            </span>
+
+            <!--DOCES-->
+            <span id="pontos2"> </span>
+
+            <span id="mais2" class="bnt">
+                <article class="doces">
+                    <div>
+                        <h2>Doces</h2>
+                        <figure>
+                            <img src="doces/doce1.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="doces/doce2.jpeg" alt="">
+                        </figure>
+                    </div>
+                </article>
+            </span>
+
+            <!--BALOES-->
+            <span id="pontos6"> </span>
+
+            <span id="mais6" class="bnt">
+                <article class="baloes">
+                    <div>
+                        <h2>Balões</h2>
+                        <figure>
+                            <img src="baloes/b1.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="baloes/b2.jpeg" alt="">
+                        </figure>
+                        
+                        <figure>
+                            <img src="baloes/b4.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="baloes/b5.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="baloes/b6.jpeg" alt="">
+                        </figure>
+                    </div>
+                </article>
+            </span>
+
+            <!--ENFEITES-->
+            <span id="pontos3"> </span>
+
+            <span id="mais3" class="bnt">
+                <article class="enfeites">
+                    <div>
+                        <h2>Flores</h2>
+                        <figure>
+                            <img src="enfeites/enfeite1.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="enfeites/enfeite2.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="enfeites/enfeite3.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="enfeites/enfeite4.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="enfeites/enfeite5.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="enfeites/enfeite6.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="enfeites/enfeite7.jpeg" alt="">
+                        </figure>
+                    </div>
+                </article>
+            </span>
+
+            <!--FERRAMENTAS-->
+            <span id="pontos4"> </span>
+
+            <span id="mais4" class="bnt">
+                <article class="ferramentas">
+                    <div>
+                        <h2>Diversos</h2>
+                        <figure>
+                            <img src="ferramentas/ferramenta1.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta2.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta3.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta4.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta5.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta18.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta19.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta20.jpeg" alt="">
+                        </figure>
+
+                        <h2>Carimbos</h2>
+                        <figure>
+                            <img src="ferramentas/ferramenta6.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta7.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta8.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta9.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta10.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta11.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta12.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta13.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta14.jpeg" alt="">
+                        </figure>
+
+                        <figure>
+                            <img src="ferramentas/ferramenta15.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta16.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta17.jpeg" alt="">
+                        </figure>
+                       
+                        <figure>
+                            <img src="ferramentas/ferramenta21.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta22.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta23.jpeg" alt="">
+                        </figure>
+                        <h2>Suporte de Guardanapo</h2>
+                        <figure>
+                            <img src="ferramentas/ferramenta24.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta25.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta26.jpeg" alt="">
+                        </figure>
+                        <figure>    
+                            <img src="ferramentas/ferramenta27.jpeg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="ferramentas/ferramenta28.jpeg" alt="">
+                        </figure>
+                    </div>
+                </article>
+            </span>
+
+            <!--ITENS-->
+            <span id="pontos5"> </span>
+
+            <span id="mais5" class="bnt">
+                <article class="itens">
+                    <div>
+                        <figure>
+                            <img src="itens/iten1.jpeg" alt="">
+                        </figure>
+                    </div>
+                </article>
+            </span>
+
+            
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
